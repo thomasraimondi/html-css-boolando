@@ -107,7 +107,7 @@ body {
 .card .card-discount {
   position: absolute;
   left: 0;
-  bottom: 50px;
+  bottom: 30px;
   background-color: red;
   color: white;
 }
@@ -115,7 +115,7 @@ body {
 .card .card-tag {
   position: absolute;
   left: 50px;
-  bottom: 50px;
+  bottom: 30px;
   background-color: forestgreen;
   color: white;
 }
@@ -140,6 +140,17 @@ body {
 
 .card-content .price-original {
   text-decoration: line-through;
+}
+
+.card .card-img-hover {
+  display: none;
+}
+
+.card:hover .card-img-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* Footer */
