@@ -1,0 +1,37 @@
+/* Variables */
+:root {
+  --test: "ciao";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/* # UTILS */
+
+.debug * {
+  background-color: #ff000033;
+  border: 2px dashed red;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: var(--containerW);
+  margin: 0 auto;
+  /* padding: 0 10px; */
+}
