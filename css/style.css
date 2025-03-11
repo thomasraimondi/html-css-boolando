@@ -61,6 +61,7 @@ body {
   font-size: 1rem;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .page-header .row {
@@ -152,6 +153,8 @@ body {
 
 .card:hover .card-img-hover {
   display: block;
+  transform: rotate(360);
+  transition: 2s;
   position: absolute;
   top: 0;
   right: 0;
@@ -161,19 +164,6 @@ body {
   left: 50px;
 }
 
-.row:first-child .card:nth-child(2) .card-tag {
-  display: none;
-}
-.row:first-child .card:nth-child(3) .card-tag {
-  display: none;
-}
-.row:last-child .card:nth-child(2) .card-tag,
-.row:last-child .card:nth-child(2) .card-discount {
-  display: none;
-}
-.row:last-child .card:nth-child(3) .card-discount {
-  display: none;
-}
 .row:last-child .card:nth-child(3) .card-tag {
   left: 0;
 }
