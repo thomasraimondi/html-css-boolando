@@ -84,10 +84,23 @@ body {
 }
 /* Footer */
 
+.page-footer {
+  background-color: black;
+  color: white;
+}
+
 .page-footer .row {
   justify-content: space-between;
 }
 
 .page-footer .row > div {
   flex-grow: 1;
+}
+
+.page-footer .row {
+  padding: 20px 0;
+}
+
+.page-footer .footer-link {
+  padding: 5px 0;
 }
