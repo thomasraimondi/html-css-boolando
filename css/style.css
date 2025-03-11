@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --test: "ciao";
+  --containerW: 1100px;
 }
 
 /* Reset */
@@ -22,6 +22,16 @@ ul li {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 /* # UTILS */
 
 .debug * {
@@ -34,4 +44,50 @@ ul li {
   max-width: var(--containerW);
   margin: 0 auto;
   /* padding: 0 10px; */
+}
+
+.row {
+  display: flex;
+}
+
+/* Header */
+.page-header {
+  background-color: #ff6801;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.page-header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header .row > div {
+  flex-grow: 1;
+}
+
+.page-header .header-gender a {
+  padding: 10px 10px;
+}
+
+.page-header .header-logo {
+  width: 10px;
+  padding: 10px 0;
+}
+
+.page-header .header-function {
+  text-align: right;
+}
+
+.page-header .header-function a {
+  padding: 0 10px;
+}
+/* Footer */
+
+.page-footer .row {
+  justify-content: space-between;
+}
+
+.page-footer .row > div {
+  flex-grow: 1;
 }
