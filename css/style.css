@@ -102,6 +102,13 @@ body {
   position: relative;
 }
 
+.card .card-label {
+  position: absolute;
+  color: white;
+  left: 0;
+  bottom: 30px;
+}
+
 .card .card-like {
   position: absolute;
   top: 10px;
@@ -110,19 +117,11 @@ body {
 }
 
 .card .card-discount {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
   background-color: red;
-  color: white;
 }
 
 .card .card-tag {
-  position: absolute;
-  left: 50px;
-  bottom: 30px;
   background-color: forestgreen;
-  color: white;
 }
 
 .card .card-like {
@@ -162,10 +161,6 @@ body {
 
 .card:last-child .card-tag {
   left: 50px;
-}
-
-.row:last-child .card:nth-child(3) .card-tag {
-  left: 0;
 }
 
 /* Footer */
